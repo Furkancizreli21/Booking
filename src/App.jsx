@@ -1,13 +1,22 @@
-import { useState } from "react";
-import "./App.css";
+// App.jsx
+import React from "react";
 import Navbar from "./components/Navbar";
-import Main from "./components/Main";
+import SearchBar from "./components/SearchBar";
+import maldives from "./assets/images/images/maldives.png";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        backgroundImage: `url(${maldives})`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        position: "relative",
+      }}
+    >
       <Navbar />
-      <Main />
+      <SearchBar />
     </div>
   );
 }

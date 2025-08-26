@@ -1,25 +1,22 @@
-import React, { useState } from "react";
+import React from "react";
 import car from "../assets/images/icons/sedan.png";
 import airplane from "../assets/images/icons/airplane.png";
 import resort from "../assets/images/icons/resort.png";
 import activity from "../assets/images/icons/activity.png";
 import logo from "../assets/images/icons/logo.png";
 import user from "../assets/images/icons/user.png";
-import maldives from "../assets/images/images/maldives.jpg";
+import maldives from "../assets/images/images/maldives.png";
 
 function ModernNavbar() {
   const menuItems = [
-    { name: "Araç Kirala", icon: car, link: "/cars" },
-    { name: "Uçak Bileti", icon: airplane, link: "/flights" },
-    { name: "Otel", icon: resort, link: "/hotels" },
-    { name: "Aktiviteler", icon: activity, link: "/activities" },
+    { name: "Rent a Car", icon: car, link: "/cars" },
+    { name: "Flight Tickets", icon: airplane, link: "/flights" },
+    { name: "Hotels", icon: resort, link: "/hotels" },
+    { name: "Activities", icon: activity, link: "/activities" },
   ];
 
   return (
-    <div
-      className="relative h-[60vh] bg-cover bg-center"
-      style={{ backgroundImage: `url(${maldives})` }}
-    >
+    <div className="relative h-[70vh] bg-cover bg-center">
       <nav className="absolute top-0 left-0 w-full z-50">
         <div className="max-w-[1400px] mx-auto px-6 md:px-12 flex justify-between items-center h-20">
           <a href="/" className="flex items-center">
@@ -44,8 +41,8 @@ function ModernNavbar() {
               href="/profile"
               className="flex items-center gap-2 text-white hover:text-blue-500 transition font-semibold"
             >
-              <img src={user} width={24} height={24} alt="Profil" />
-              Profil
+              <img src={user} width={24} height={24} alt="Profile" />
+              Profile
             </a>
           </div>
         </div>
