@@ -5,7 +5,6 @@ import resort from "../assets/images/icons/resort.png";
 import activity from "../assets/images/icons/activity.png";
 import logo from "../assets/images/icons/logo.png";
 import user from "../assets/images/icons/user.png";
-import maldives from "../assets/images/images/maldives.png";
 
 function ModernNavbar() {
   const menuItems = [
